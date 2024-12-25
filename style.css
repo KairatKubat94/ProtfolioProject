@@ -1,0 +1,167 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: #333;
+}
+
+/* Навигация */
+.navbar {
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Секция "Обо мне" */
+#about {
+    background-color: #e9ecef;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Проекты */
+#projects {
+    background-color: #fff;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card .btn {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: blue;
+}
+
+/* Контакты */
+#contact {
+    background-color: #416c97;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 1.1rem;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.btn-primary {
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: blue;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #projects .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
